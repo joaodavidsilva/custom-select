@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Custom Select</title>
+	</head>
+	<body>
+		<div class="select">
+			<div id="category-select">
+				<label for="options-view-button">Category</label>
+				<input type="checkbox" id="options-view-button" />
+
+				<div id="select-button">
+					<div id="selected-value">Select a category</div>
+
+					<div id="chevrons">
+						<i data-lucide="chevron-down"></i>
+						<i data-lucide="chevron-up"></i>
+					</div>
+				</div>
+			</div>
+
+			<ul id="options">
+				<li class="option">
+					<input
+						type="radio"
+						name="category"
+						value="bakery"
+						data-label="Bakery"
+					/>
+
+					<i data-lucide="sandwich"></i>
+					<span class="label">Bakery</span>
+					<i data-lucide="check"></i>
+				</li>
+				<li class="option">
+					<input
+						type="radio"
+						name="category"
+						value="vegetal"
+						data-label="Vegetal"
+					/>
+
+					<i data-lucide="carrot"></i>
+					<span class="label">Vegetal</span>
+					<i data-lucide="check"></i>
+				</li>
+				<li class="option">
+					<input
+						type="radio"
+						name="category"
+						value="meat"
+						data-label="Meat"
+					/>
+
+					<i data-lucide="beef"></i>
+					<span class="label">Meat</span>
+					<i data-lucide="check"></i>
+				</li>
+				<li class="option">
+					<input
+						type="radio"
+						name="category"
+						value="fruit"
+						data-label="Fruit"
+					/>
+
+					<i data-lucide="apple"></i>
+					<span class="label">Fruit</span>
+					<i data-lucide="check"></i>
+				</li>
+				<li class="option">
+					<input
+						type="radio"
+						name="category"
+						value="drinks"
+						data-label="Drinks"
+					/>
+
+					<i data-lucide="milk"></i>
+					<span class="label">Drink</span>
+					<i data-lucide="check"></i>
+				</li>
+			</ul>
+		</div>
+
+		<script src="https://unpkg.com/lucide@latest"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
